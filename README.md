@@ -3,7 +3,7 @@ FilterBuddy
 
 The SBIG CFW-9 is usually connected to the I2C-AUX port of a USB SBIG ST-7/8/9/10/2000 CCD camera body.  Until now, this could only be controlled by these cameras using the SBIG camera drivers and client software such as MaxIm DL, etc.  This is quite disappointing as the filter wheel cannot be used with other cameras.
 
-Diffraction Limited (owner of SBIG) will not release details of the hardware and interface details as this "information is proprietary and confidential".  It also says it doe not "support operation via third party hardware and doing so may void your warranty".  Probably all CFW-9 filter wheels are out of warranty!
+Diffraction Limited (owner of SBIG) will not release details of the hardware and interface details as this "information is proprietary and confidential".  It also says it does not "support operation via third party hardware and doing so may void your warranty".  Probably all CFW-9 filter wheels are out of warranty!
 
 So, after much investigation the hardware, interface, and software protocol has been worked out.  Full details will be found in the PDF file "CFW-9 Interface Details.pdf".
 
