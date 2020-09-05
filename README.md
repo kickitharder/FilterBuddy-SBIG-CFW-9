@@ -25,3 +25,8 @@ Prequistites to compile this code is as follows:
 
 5. Arduino IDE
         https://www.arduino.cc/en/Main/Software
+
+More files and updates will appear here later.
+
+Keith Rickard
+5 September 2020
