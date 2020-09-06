@@ -23,6 +23,7 @@ Partial Class SetupDialogForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SetupDialogForm))
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,10 +41,12 @@ Partial Class SetupDialogForm
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.GitHubLogo = New System.Windows.Forms.PictureBox()
         CType(Me.SBIGLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CMHASDLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.GitHubLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'OK_Button
@@ -94,17 +97,18 @@ Partial Class SetupDialogForm
         '
         'SBIGLogo
         '
-        Me.SBIGLogo.Image = Global.ASCOM.FilterBuddy.My.Resources.Resources.SBIG_62x56
+        Me.SBIGLogo.Image = CType(resources.GetObject("SBIGLogo.Image"), System.Drawing.Image)
         Me.SBIGLogo.Location = New System.Drawing.Point(59, 239)
         Me.SBIGLogo.Name = "SBIGLogo"
         Me.SBIGLogo.Size = New System.Drawing.Size(62, 56)
         Me.SBIGLogo.TabIndex = 11
         Me.SBIGLogo.TabStop = False
+        Me.SBIGLogo.WaitOnLoad = True
         '
         'CMHASDLogo
         '
-        Me.CMHASDLogo.Image = Global.ASCOM.FilterBuddy.My.Resources.Resources.CMHASD_61x56_BG
-        Me.CMHASDLogo.Location = New System.Drawing.Point(305, 5)
+        Me.CMHASDLogo.Image = CType(resources.GetObject("CMHASDLogo.Image"), System.Drawing.Image)
+        Me.CMHASDLogo.Location = New System.Drawing.Point(298, 3)
         Me.CMHASDLogo.Name = "CMHASDLogo"
         Me.CMHASDLogo.Size = New System.Drawing.Size(61, 56)
         Me.CMHASDLogo.TabIndex = 10
@@ -114,7 +118,7 @@ Partial Class SetupDialogForm
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.ASCOM.FilterBuddy.My.Resources.Resources.ASCOM
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(5, 239)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(48, 56)
@@ -202,6 +206,15 @@ Partial Class SetupDialogForm
         Me.Label2.TabIndex = 19
         Me.Label2.Text = "Crayford Manor House"
         '
+        'GitHubLogo
+        '
+        Me.GitHubLogo.Image = CType(resources.GetObject("GitHubLogo.Image"), System.Drawing.Image)
+        Me.GitHubLogo.Location = New System.Drawing.Point(127, 239)
+        Me.GitHubLogo.Name = "GitHubLogo"
+        Me.GitHubLogo.Size = New System.Drawing.Size(67, 56)
+        Me.GitHubLogo.TabIndex = 21
+        Me.GitHubLogo.TabStop = False
+        '
         'SetupDialogForm
         '
         Me.AcceptButton = Me.OK_Button
@@ -209,6 +222,7 @@ Partial Class SetupDialogForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(371, 352)
+        Me.Controls.Add(Me.GitHubLogo)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lstDetails)
@@ -234,6 +248,7 @@ Partial Class SetupDialogForm
         CType(Me.CMHASDLogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.GitHubLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -255,4 +270,5 @@ Partial Class SetupDialogForm
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label6 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents GitHubLogo As PictureBox
 End Class

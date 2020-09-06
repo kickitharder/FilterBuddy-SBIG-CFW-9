@@ -60,6 +60,17 @@ Public Class SetupDialogForm
         End Try
     End Sub
 
+    Private Sub GitHubLogo_Click(sender As Object, e As EventArgs) Handles GitHubLogo.Click
+        ' Click on GitHub logo event handler
+        Try
+            System.Diagnostics.Process.Start("https://github.com/kickitharder/FilterBuddy-SBIG-CFW-9")
+        Catch noBrowser As System.ComponentModel.Win32Exception
+            If noBrowser.ErrorCode = -2147467259 Then
+                MessageBox.Show(noBrowser.Message)
+            End If
+        Catch other As System.Exception
+            MessageBox.Show(other.Message)
+        End Try
     End Sub
 
     Private Sub SetupDialogForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load ' Form load event handler
@@ -118,4 +129,5 @@ Public Class SetupDialogForm
 
         Return retStr
     End Function
+
 End Class
