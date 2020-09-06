@@ -153,7 +153,7 @@ Partial Class SetupDialogForm
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(171, 13)
         Me.Label5.TabIndex = 16
-        Me.Label5.Text = "(c) 2020 Keith Rickard  V1.200903"
+        Me.Label5.Text = "(c) 2020 Keith Rickard  V1.200906"
         '
         'btnCheck
         '
